@@ -1,0 +1,17 @@
+<div class="row">
+  <div>
+    <h1>Login:</h1>
+    <form action="">
+      <div>
+        <label for="email">Email address:</label>
+        <input type="email" class="" id="email" name="email" [(ngModel)]="email">
+      </div>
+      <div>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="password" [(ngModel)]="password">
+      </div>
+      <button class="btn" (click)="socialSignIn('google')">Login</button>
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </form>
+  </div>
+</div>
